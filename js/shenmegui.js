@@ -17,7 +17,7 @@
 			if(!arr || !arr.length) return;
 			if(!min || min<1000) min=1000;
 			if(!max) max=30000;
-			if(min>=max){
+			if(min>max){
 				min=1000;
 				max=30000;
 			}
