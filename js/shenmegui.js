@@ -1,6 +1,6 @@
 /**
- *	shennmegui.js v0.1.0
- *	author by So Aanyip
+ *  shennmegui.js v0.1.0
+ *  author by So Aanyip
  *  28th Jan 2015
  */
 (function(window){
