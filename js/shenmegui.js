@@ -1,11 +1,11 @@
 /**
- *  shennmegui.js v0.1.0
+ *  shenmegui.js v0.1.0
  *  author by So Aanyip
  *  28th Jan 2015
  */
 (function(window){
 	"use strict";
-	window.shenmegui = {
+	var shenmegui = {
 		/**
 		 * 启动方法
 		 * @param  {Array} arr  要应用的消息声音来源，传入string，如['qq']。现在可用的参数：'qq','weibo'.
@@ -97,5 +97,13 @@
 				return that._loopJoke(min,max);
 			},time);
 		}
+	}
+
+	if(typeof define === 'function' && define.amd){
+		define(function(){
+			return shenmegui;
+		})
+	}else {
+		window.shenmegui = shenmegui;
 	}
 })(window);
